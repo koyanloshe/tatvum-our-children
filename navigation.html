@@ -1,0 +1,91 @@
+<nav class="navbar navbar-default marb0 bg-red">
+  <div class="container-fluid">
+    <div class="navbar-header">
+	    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand padsm" href="index.html">
+	      <img src="img/logo-white.svg" class="img-responsive nav-logo">
+      </a>
+    </div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	    <ul class="nav navbar-nav navbar-right">
+	      <li class="padsm"><a href="index.html" class="tc-white upper">Home</a></li>
+				<li class="dropdown padsm">
+	          <a href="#" class="dropdown-toggle tc-white upper" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Our Story <span class="caret"></span></a>
+						<ul class="dropdown-menu bg-dred">
+			        <li><a href="our-story.html#overview" class="tc-white padxs upper">Overview</a></li>
+			        <li><a href="our-story.html#team" class="tc-white padxs upper">Team</a></li>
+			        <li><a href="our-story.html#partners" class="tc-white padxs upper">Our Partners</a></li>
+			      </ul>
+	      </li>
+	      <li class="dropdown padsm">
+	          <a href="our-initiatives.html" class="dropdown-toggle tc-white upper" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Our Initiatives<span class="caret"></span></a>
+						<ul class="dropdown-menu bg-dred">
+			        <li><a href="learning-beyond.html" class="tc-white padxs upper">Learning Beyond</a></li>
+			        <li><a href="group-homes.html" class="tc-white padxs upper">Group Homes</a></li>
+			        <li><a href="childrens-meet.html" class="tc-white padxs upper">Children's Meet</a></li>
+			        <li><a href="eductional-and-nutritional-assistance.html" class="tc-white padxs upper">Education & Nutrition</a></li>
+			        <li><a href="birthday-programs.html" class="tc-white padxs upper">Birthday Programs</a></li>
+			        <li><a href="recreational-outings.html" class="tc-white padxs upper">Recreational Outings</a></li>
+			      </ul>
+	      </li>
+	      <li class="padsm"><a href="our-impact.html" class="tc-white upper">Our Impact</a></li>
+	      <li class="dropdown padsm">
+	          <a href="#" class="dropdown-toggle tc-white upper" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Get Involved <span class="caret"></span></a>
+						<ul class="dropdown-menu bg-dred">
+			        <li><a href="donate.html" class="tc-white padxs upper">Donate</a></li>
+			        <li><a href="volunteer.html" class="tc-white padxs upper">Volunteer</a></li>
+			        <li><a href="collaborate.html" class="tc-white padxs upper">Collaborate</a></li>
+			      </ul>
+	      </li>
+	      <li class="padsm"><a href="contact-us.html" class="tc-white upper">Contact Us</a></li>
+	    </ul>
+    </div>
+  </div>
+</nav>
+
+<script>
+  function tabDonate(){
+    $('#collaborate').removeClass('in active');
+    $('#volunteer').removeClass('in active');
+    $('#donate').addClass('in active');
+  }
+</script>
+
+<script>
+  function tabVolunteer(){
+    $('#collaborate').removeClass('in active');
+    $('#donate').removeClass('in active');
+    $('#volunteer').addClass('in active');
+  }
+</script>
+
+<script>
+  function tabCollaborate(){
+    $('#volunteer').removeClass('in active');
+    $('#donate').removeClass('in active');
+    $('#collaborate').addClass('in active');
+  }
+</script>
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '173149309888917',
+      xfbml      : true,
+      version    : 'v2.9'
+    });
+    FB.AppEvents.logPageView();
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
